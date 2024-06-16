@@ -1,0 +1,27 @@
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: IES-DC-API
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root@1234
+    url: "jdbc:mysql://localhost:3306/ies"
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

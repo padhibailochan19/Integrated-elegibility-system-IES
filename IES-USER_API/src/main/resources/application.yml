@@ -1,0 +1,51 @@
+server:
+  port: 8088
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: IES-USER-API
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:2222/
+
+
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root@1234
+    url: jdbc:mysql://localhost:3306/ies
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  mail:
+    host: smtp.gmail.com
+    password: ukoa bwdn jwti lens
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: padhibailochan19@gmail.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+
+

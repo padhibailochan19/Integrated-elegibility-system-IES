@@ -1,0 +1,68 @@
+server:
+  port: 8087
+
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: DEBUG
+
+spring:
+  application:
+    name: API-Gateway
+
+  cloud:
+    gateway:
+      discovery.locator:
+        enabled: true
+      routes:
+        - id: ies-user-api
+          uri: lb://IES-USER-API
+          predicates:
+            - Path=/user/**
+#          filters:
+#            - name: AuthenticationFilter  
+        
+            
+        - id: ies-admin-api
+          uri: lb://IES-ADMIN-API
+          predicates:
+            - Path=/admin/**
+          filters:
+            - name: AuthenticationFilter  
+         
+        - id: ies-ar-api
+          uri: lb://IES-AR-API
+          predicates:
+            - Path=/ar/**
+            
+        - id: ies-dc-api
+          uri: lb://IES-DC-API
+          predicates:
+            - Path=/dc/**
+            
+        - id: ies-ed-api
+          uri: lb://IES-ED-API
+          predicates:
+            - Path=/ed/**
+            
+        - id: ies-co-api
+          uri: lb://IES-CO-API
+          predicates:
+            - Path=/co/**
+         
+        - id: ies-report-api
+          uri: lb://IES-REPORTS-API
+          predicates:
+            - Path=/report/**
+            
+  main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="AR_API/src/main/java"/>
+	<classpathentry kind="src" path="AR_API/src/test/java"/>
+	<classpathentry kind="src" path="ED_API/src/main/java"/>
+	<classpathentry kind="src" path="ED_API/src/main/resources"/>
+	<classpathentry kind="src" path="ED_API/src/test/java"/>
+	<classpathentry kind="src" path="ED_API/target/classes"/>
+	<classpathentry kind="src" path="IES_ADMIN_API/src/main/java"/>
+	<classpathentry kind="src" path="IES_ADMIN_API/src/test/java"/>
+	<classpathentry kind="src" path="IES_CO_API/src/main/java"/>
+	<classpathentry kind="src" path="IES_CO_API/src/test/java"/>
+	<classpathentry kind="src" path="IES_DC_API/src/main/java"/>
+	<classpathentry kind="src" path="IES_DC_API/src/test/java"/>
+	<classpathentry kind="src" path="IES_REPORTS_API/src/main/java"/>
+	<classpathentry kind="src" path="IES_REPORTS_API/src/test/java"/>
+	<classpathentry kind="src" path="IES_SSA_API/src/main/java"/>
+	<classpathentry kind="src" path="IES_SSA_API/src/test/java"/>
+	<classpathentry kind="src" path="IES-API-Gateway/src/main/java"/>
+	<classpathentry kind="src" path="IES-API-Gateway/src/test/java"/>
+	<classpathentry kind="src" path="IES-Auth-Service/src/main/java"/>
+	<classpathentry kind="src" path="IES-Auth-Service/src/test/java"/>
+	<classpathentry kind="src" path="IES-Service-Registry/src/main/java"/>
+	<classpathentry kind="src" path="IES-Service-Registry/src/test/java"/>
+	<classpathentry excluding="in/ashokit/client/" kind="src" path="IES-USER_API/src/main/java"/>
+	<classpathentry kind="src" path="IES-USER_API/src/main/java/in/ashokit/client"/>
+	<classpathentry kind="src" path="IES-USER_API/src/test/java"/>
+	<classpathentry kind="lib" path="AR_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="ED_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES_ADMIN_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES_CO_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES_DC_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES_REPORTS_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES_SSA_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES-API-Gateway/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES-Auth-Service/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES-Service-Registry/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="IES-USER_API/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="AR_API/target/classes"/>
+</classpath>

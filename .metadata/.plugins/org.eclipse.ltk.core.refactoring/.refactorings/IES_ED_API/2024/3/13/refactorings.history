@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EligEntity.java&apos; to &apos;IES_REPORTS_API/src/main/java/com.bailochan.entity&apos;&#x0D;&#x0A;- Original project: &apos;IES_ED_API&apos;&#x0D;&#x0A;- Destination element: &apos;IES_REPORTS_API/src/main/java/com.bailochan.entity&apos;&#x0D;&#x0A;- Original element: &apos;com.bailochan.entities.EligEntity.java&apos;" description="Copy compilation unit" destination="=IES_REPORTS_API/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bailochan.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bailochan.entities{EligEntity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1711422771239" units="1" version="1.0"/>
+</session>

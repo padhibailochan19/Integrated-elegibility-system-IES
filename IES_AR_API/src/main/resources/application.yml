@@ -1,0 +1,26 @@
+server:
+  port: 8083
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: IES-AR-API
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root@1234
+    url: jdbc:mysql://localhost:3306/ies
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
+ssa:
+  api:
+    url: http://localhost:8082/api/ssn/{ssn}

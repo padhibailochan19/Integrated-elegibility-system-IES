@@ -1,0 +1,23 @@
+server:
+  port: 9084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: IES-REPORTS-API
+  datasource:
+    username: root
+    password: root@1234
+    url: jdbc:mysql://localhost:3306/ies
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cloud:
+    compatibility-verifier:
+      enabled: false
